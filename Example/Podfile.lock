@@ -1,6 +1,6 @@
 PODS:
   - Kiwi (2.4.0)
-  - TLKeyboardUtil (0.1.0)
+  - TLKeyboardUtil (0.0.1)
 
 DEPENDENCIES:
   - Kiwi
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  TLKeyboardUtil: 8b1d65862eb4a4c46a78b2c72710b052fba283dd
+  TLKeyboardUtil: 89bb93b73adde4901c134c0e4825397f0390a52f
 
 COCOAPODS: 0.39.0

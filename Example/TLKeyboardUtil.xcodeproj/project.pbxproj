@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4937AF871C99A61C00BC4229 /* TLKeyboardUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4937AF861C99A61C00BC4229 /* TLKeyboardUtil.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -35,10 +36,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4937AF461C99A50700BC4229 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0C58C58CE50EE443898DB5DC /* Pods-TLKeyboardUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLKeyboardUtil_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TLKeyboardUtil_Example/Pods-TLKeyboardUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0FFAC31C11CDAFD0D047345F /* Pods-TLKeyboardUtil_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLKeyboardUtil_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TLKeyboardUtil_Tests/Pods-TLKeyboardUtil_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		17848E3C1028CB7420E558B9 /* Pods-TLKeyboardUtil_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLKeyboardUtil_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TLKeyboardUtil_Tests/Pods-TLKeyboardUtil_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4937AF391C99A50700BC4229 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		4937AF3A1C99A50700BC4229 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		4937AF3D1C99A50700BC4229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4937AF3F1C99A50700BC4229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4937AF861C99A61C00BC4229 /* TLKeyboardUtil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLKeyboardUtil.framework; path = "Pods/../build/Debug-iphoneos/TLKeyboardUtil.framework"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TLKeyboardUtil_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLKeyboardUtil_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4937AF871C99A61C00BC4229 /* TLKeyboardUtil.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -93,12 +113,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4937AF381C99A50700BC4229 /* TLKeyboardUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4937AF391C99A50700BC4229 /* ActionViewController.h */,
+				4937AF3A1C99A50700BC4229 /* ActionViewController.m */,
+				4937AF3C1C99A50700BC4229 /* MainInterface.storyboard */,
+				4937AF3F1C99A50700BC4229 /* Info.plist */,
+			);
+			path = TLKeyboardUtil;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for TLKeyboardUtil */,
 				6003F5B5195388D20070C39A /* Tests */,
+				4937AF381C99A50700BC4229 /* TLKeyboardUtil */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				D0075CEA2CCBD7B1845F3A59 /* Pods */,
@@ -117,6 +149,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4937AF861C99A61C00BC4229 /* TLKeyboardUtil.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -206,6 +239,7 @@
 				6003F588195388D20070C39A /* Resources */,
 				A4EEE15DDEC09276BD323A93 /* Embed Pods Frameworks */,
 				36ED6630FCA433B3C1929C03 /* Copy Pods Resources */,
+				4937AF461C99A50700BC4229 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -415,6 +449,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4937AF3C1C99A50700BC4229 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4937AF3D1C99A50700BC4229 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		6003F596195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -513,6 +555,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TLKeyboardUtil/TLKeyboardUtil-Prefix.pch";
 				INFOPLIST_FILE = "TLKeyboardUtil/TLKeyboardUtil-Info.plist";
@@ -529,6 +575,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TLKeyboardUtil/TLKeyboardUtil-Prefix.pch";
 				INFOPLIST_FILE = "TLKeyboardUtil/TLKeyboardUtil-Info.plist";
