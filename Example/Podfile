@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'TLKeyboardUtil_Example', :exclusive => true do
+  pod 'TLKeyboardUtil', :path => '../'
+end
+
+target 'TLKeyboardUtil_Tests', :exclusive => true do
+  pod 'TLKeyboardUtil', :path => '../'
+
+  pod 'Kiwi'
+end
