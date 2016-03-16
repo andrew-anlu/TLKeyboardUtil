@@ -1,0 +1,25 @@
+{
+  "name": "TLKeyboardUtil",
+  "version": "0.1.0",
+  "summary": "A short description of TLKeyboardUtil.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/TLKeyboardUtil",
+  "license": "MIT",
+  "authors": {
+    "Andrew": "anluanlu123@163.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/TLKeyboardUtil.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "TLKeyboardUtil": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
