@@ -1,4 +1,5 @@
 # TLKeyboardUtil
+<<<<<<< HEAD
 
 [![CI Status](http://img.shields.io/travis/Andrew/TLKeyboardUtil.svg?style=flat)](https://travis-ci.org/Andrew/TLKeyboardUtil)
 [![Version](https://img.shields.io/cocoapods/v/TLKeyboardUtil.svg?style=flat)](http://cocoapods.org/pods/TLKeyboardUtil)
@@ -27,3 +28,6 @@ Andrew, anluanlu123@163.com
 ## License
 
 TLKeyboardUtil is available under the MIT license. See the LICENSE file for more info.
+=======
+一款精致的工具，可以帮助你快速实现键盘的弹出，完美解决视图上的控件遮挡问题
+>>>>>>> 0e0ba11c431d41d735f7d09ca755c99736f53dc1
