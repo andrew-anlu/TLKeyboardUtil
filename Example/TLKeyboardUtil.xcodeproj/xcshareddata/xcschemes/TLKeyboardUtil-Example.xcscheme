@@ -38,6 +38,26 @@
                ReferencedContainer = "container:TLKeyboardUtil.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "49D32F111C9A53FC00B473CD"
+               BuildableName = "eeTests.xctest"
+               BlueprintName = "eeTests"
+               ReferencedContainer = "container:TLKeyboardUtil.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "49D32F411C9A545000B473CD"
+               BuildableName = "TLKeyboardUtilTests.xctest"
+               BlueprintName = "TLKeyboardUtilTests"
+               ReferencedContainer = "container:TLKeyboardUtil.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

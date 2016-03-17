@@ -1,6 +1,0 @@
-framework module TLKeyboardUtil {
-  umbrella header "TLKeyboardUtil-umbrella.h"
-
-  export *
-  module * { export * }
-}
