@@ -12,6 +12,8 @@
 #import <objc/objc.h>
 #import <objc/runtime.h>
 
+#define ALLSUBVIEWS @"allSubviews"
+
 @interface TLKeyboardUtil()
 /**
  *  键盘=>上一个
@@ -58,8 +60,43 @@
         _rootView = scrollView;
     }
     
-    objc_setAssociatedObject(_rootView, @"test", rootView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+    //存储所有输入框的数组
+    NSMutableArray *subviewsArray=[[NSMutableArray alloc]init];
+    objc_setAssociatedObject(_rootView,ALLSUBVIEWS, subviewsArray, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    //添加子视图所有的输入框
+    [self checkedInputViewInRootView:_rootView];
+    
 }
+
+/**
+ *  在根视图中检查所有子视图的input输入框
+ */
+-(void)checkedInputViewInRootView:(UIView *)rootView{
+
+    for (UIView *subView in rootView.subviews){
+        
+        if (subView.hidden == YES) {
+            continue;
+        }
+        
+        if ([subView isKindOfClass:[UITextField class]] ||
+            [subView isKindOfClass:[UITextView class]] ||
+            [subView isKindOfClass:[UISearchBar class]]) {
+            
+            NSMutableArray *subviewsArray=objc_getAssociatedObject(_rootView, ALLSUBVIEWS);
+            NSLog(@"呵呵%@",subviewsArray);
+            
+            [subviewsArray addObject:subView];
+            
+            
+        } else {
+            [self checkedInputViewInRootView:subView];
+        }
+    }
+}
+
+
 
 -(void)removeKeyboardAutoPop{
 
