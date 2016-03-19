@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TLKeyboardUtil"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "完美实现键盘弹出功能，并且适配iOS各个版本"
 
 # This description is used to generate tags and improve search results.

@@ -300,7 +300,6 @@ static NSString *keyInputViewSubViewArray = @"keyInputViewSubViewArray";
  */
 -(void)judgeToolbarItemEnabled:(UIView *)currentView{
     NSMutableArray *subviewsArray=(NSMutableArray*)objc_getAssociatedObject(_rootScrollView, &keyInputViewSubViewArray);
-    UIView *prevView=nil;
     int index=1000;
     for (int i=0; i<subviewsArray.count; i++) {
         UIView *subView=subviewsArray[i];

@@ -21,6 +21,11 @@ it, simply add the following line to your Podfile:
 pod "TLKeyboardUtil"
 ```
 
+## How to use
+
+TLKeyboardUtil *keyboardUtil=[TLKeyboardUtil sharedInstance];
+[keyboardUtil addKeyboardAutoPopWithView:self.view];
+
 ## Author
 
 Andrew, anluanlu123@163.com
