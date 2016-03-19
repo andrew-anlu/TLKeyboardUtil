@@ -21,10 +21,28 @@ it, simply add the following line to your Podfile:
 pod "TLKeyboardUtil"
 ```
 
+
+## APIS
+
+```
++(TLKeyboardUtil*)sharedInstance;
+
+/**
+ *  给根视图添加键盘自动弹出功能
+ *
+ *  @param rootView 根视图
+ */
+-(void)addKeyboardAutoPopWithView:(UIView *)rootView;
+```
+
 ## How to use
 
+```
 TLKeyboardUtil *keyboardUtil=[TLKeyboardUtil sharedInstance];
 [keyboardUtil addKeyboardAutoPopWithView:self.view];
+```
+
+
 
 ## Author
 
