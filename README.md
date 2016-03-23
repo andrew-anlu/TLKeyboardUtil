@@ -12,6 +12,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+## Swift版本
+[swift版本](https://github.com/andrew-anlu/TLKeyboardUtil-Swift)
+
 ## Installation
 
 TLKeyboardUtil is available through [CocoaPods](http://cocoapods.org). To install
@@ -39,6 +42,7 @@ pod "TLKeyboardUtil"
 
 ```
 TLKeyboardUtil *keyboardUtil=[TLKeyboardUtil sharedInstance];
+
 [keyboardUtil addKeyboardAutoPopWithView:self.view];
 ```
 

@@ -179,7 +179,8 @@ static NSString *keyInputViewSubViewArray = @"keyInputViewSubViewArray";
     }
 }
 /**
- *  为所有的子视图设置InputAccessView
+ *
+   MARK: - 为所有的子视图设置InputAccessView
  */
 -(void)setInputAccessViewWithInputView{
     
@@ -247,7 +248,7 @@ static NSString *keyInputViewSubViewArray = @"keyInputViewSubViewArray";
 -(void)prevAction:(id)sender{
     NSLog(@"上一个");
     UIView *currentView=[self getFirstResponder];
-     NSMutableArray *subviewsArray=(NSMutableArray*)objc_getAssociatedObject(_rootScrollView, &keyInputViewSubViewArray);
+    NSMutableArray *subviewsArray=(NSMutableArray*)objc_getAssociatedObject(_rootScrollView, &keyInputViewSubViewArray);
     UIView *prevView=nil;
     int index=1000;
     for (int i=0; i<subviewsArray.count; i++) {
